@@ -8,14 +8,14 @@ int main(int argc,char*argv[])
 	if(child_pid == 0)
 	{
 
-		printf("Child Of %s is %d\n",name,getpid());
+		printf("child of %s Is %d\n",name,getpid());
  		execl("/bin/ls","ls","-a",(char*)NULL);
 		return 0;
 	}
 	else{
 
 		printf("my child is %d\n",child_pid);
-        printf("Hello");
+        printf("Hello World");
 		return(0);
 	    }
 }
