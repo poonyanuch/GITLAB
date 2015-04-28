@@ -8,7 +8,7 @@ int main(int argc,char*argv[])
 	if(child_pid == 0)
 	{
 
-		printf("child of %s Is %d\n",name,getpid());
+		printf("The child of %s Is %d\n",name,getpid());
  		execl("/bin/ls","ls","-a",(char*)NULL);
         #change1
 		return 0;
@@ -16,7 +16,7 @@ int main(int argc,char*argv[])
 	else{
 
 		printf("my child is %d\n",child_pid);
-        printf("Hello Worlddd");
+        printf("Hello Worlddd!");
         #change2
 		return(0);
 	    }
