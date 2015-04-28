@@ -13,7 +13,7 @@ int main(int argc,char*argv[])
 		{
 			i++;
 			printf("child of %s is %d\n",name,getpid());
-			printf("*TEST CHANGE* number of process %d",i);
+			printf("*TEST CHANGEs* number of process %d",i);
 			//return 0;
 			wait();
 		}
